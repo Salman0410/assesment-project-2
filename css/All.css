@@ -1,0 +1,200 @@
+body{
+
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.top {
+
+    background-color: #2d3913;
+    
+
+  }
+
+
+
+
+
+
+
+
+.navarea{
+    margin: 0px;
+    padding: 1em;
+    background-color: #262626;
+    width: 100%;
+    
+    display: flex;
+}
+
+.navarea > ul{
+
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex: 3;
+}
+
+.navarea li{
+
+    margin-right: 1em;
+    line-height: 30px;
+
+}
+
+.navarea li a{
+
+    padding: 10px;
+    font-family: 'Roboto Slab', serif;;
+    text-decoration: none;
+    
+    color: #999966;
+}
+
+.navarea a:hover {
+    background-color: #2d3913;
+    color: white;
+    border-radius: 40px;
+  }
+
+
+ .navarea a.active {
+    background-color: #2196F3;
+    color: white;
+  } 
+
+.navarea > form{
+
+    display: flex ;
+    justify-content: right;
+    flex: 1;
+    
+    
+    border: 0;
+}
+
+.navarea input{
+
+    flex: 1;
+    border-radius: 25px;
+    border: 0;
+   text-align: center;
+     text-decoration: solid;
+   
+     font-size: 18px;
+     font-style: cursive;
+}
+
+.navarea button{
+
+    background: #999966;
+    border: 0;
+    border-radius: 40px;
+    color: #ffffff ;
+    padding: 8px 11px;
+    margin: 0px 25px;
+}
+
+.main {
+    justify-content: center;
+    text-align: center;
+    
+}
+
+mark {
+    background-color: #2d3913;
+    color: #f5f8ec;
+    padding: 5px 10px;
+}
+
+@media only screen and (max-width: 350px) and (max-width: 991px) {
+    .wrapper{
+        width: 100%;
+    }
+    .navarea{
+        flex-direction: column;
+    }
+    .navarea ul{
+        flex-direction: row;
+    }    
+
+    .features h2{
+
+        text-align: center;
+    }
+ 
+}
+
+
+@media(min-width: 401px) and (max-width: 1024px){
+
+    .wrapper{
+        width: 100%;
+    }
+    .navarea{
+        flex-direction: column;
+    }
+    .navarea ul{
+        flex-direction: row;
+    }    
+
+    .features h2{
+
+        text-align: center;
+    }
+
+    
+}
+
+
+
+@media(min-width: 200px) and (max-width: 400px){
+
+
+    body{
+        width: 100%;
+        height: 100%;
+    }
+
+   .features img{
+
+        width: 80px;
+   } 
+}
+
+@media only screen and (max-width: 767px){
+
+    .wrapper{
+        width: 100%;
+    }
+    .navarea{
+
+        flex-direction: column;
+    }
+    .navarea ul{
+        flex-direction: row;
+        margin-bottom: 1em;
+    }
+
+    .navarea li{
+        padding: 0;
+        font-size: 8px;
+        text-align: center;
+    }
+}
+
+.features{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    color: white;
+}
+
+.features h2:hover{
+
+     color: lime;
+}
